@@ -237,7 +237,8 @@ header .grid-layout nav .nav-list li a:hover {
 @media screen and (max-width: 992px) {
     #s-home {
         padding: 100px 20px 0px 20px;
-        
+        background-image: url("imagens/capa-mobile2.jpg"); 
+        background-size: cover; 
     }
 }
 
@@ -285,7 +286,7 @@ header .grid-layout nav .nav-list li a:hover {
 @media screen and (max-width: 992px) {
     #s-home .grid-layout #home #home-container-text h1 {
         font-size: 3.2rem;
-        color: #fff;
+        color: #000000;
     }
 }
 
