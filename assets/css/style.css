@@ -237,7 +237,7 @@ header .grid-layout nav .nav-list li a:hover {
 @media screen and (max-width: 992px) {
     #s-home {
         padding: 100px 20px 0px 20px;
-        background-image: url("imagens/capa-mobile2.jpg"); 
+        background-image: url("imagens/fundo2.svg"); 
         background-size: cover; 
     }
 }
@@ -295,12 +295,18 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-home .grid-layout #home #home-container-text p {
-    color: #ff0000;
+    color: #000000;
     font-size: 3rem;
     max-width: 600px;
     margin: 40px 0px;
     font-weight: 800;
     line-height: 160%;
+}
+
+@media screen and (max-width: 992px){
+    #s-home .grid-layout #home #home-container-text p{
+        color: white;
+    }
 }
 
 #s-home .grid-layout #home #home-container-text a {
@@ -472,6 +478,60 @@ header .grid-layout nav .nav-list li a:hover {
     transform: scale(1.1);
 }
 /* ---------------------------------------------------- */
+/* contatos */
+
+.contact-section {
+    width: 100%;
+    background-color: #e6e6e6; /* Cinza neutro e agradável */
+    padding: 60px 20px;
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.contact-item {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #444;
+}
+.contact-item a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+.contact-item a:hover {
+    text-decoration: underline;
+}
+.button {
+    display: inline-block;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #25D366;
+    width: 220px;
+    text-align: center;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.button:hover {
+    background-color: #1da851;
+}
+/* --------------------------------------------- */
+
+
 
 footer {
     width: 100%;
