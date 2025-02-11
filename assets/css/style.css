@@ -230,14 +230,15 @@ header .grid-layout nav .nav-list li a:hover {
     background-size: cover;
     width: 100%;
     /* alinhar texto a direita */
-    padding-left: 1200px;
+    padding-left: 100px;
+    padding-top: 100px;
     
 }
 
 @media screen and (max-width: 992px) {
     #s-home {
         padding: 100px 20px 0px 20px;
-        background-image: url("imagens/fundo2.svg"); 
+        background: linear-gradient(to bottom, #bbb, #777, #333);
         background-size: cover; 
     }
 }
@@ -276,7 +277,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-home .grid-layout #home #home-container-text h1 {
-    color: #000000;
+    color: #ffffff;
     max-width: 650px;
     line-height: 140%;
     font-size: 5rem;
@@ -295,7 +296,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-home .grid-layout #home #home-container-text p {
-    color: #000000;
+    color: #ff0000;
     font-size: 3rem;
     max-width: 600px;
     margin: 40px 0px;
@@ -451,8 +452,12 @@ header .grid-layout nav .nav-list li a:hover {
 .partners-section {
     text-align: center;
     padding: 50px 0;
-    background-color: #f7f7f7;
+    background-color: #ffffff;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
+
 
 .partners-section h2 {
     font-size: 30px;
@@ -462,13 +467,22 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 .partners-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    display: inline-block;
+    animation: anima 15s linear infinite;
 }
 
-.partner-logo {
+.partners-container img {
+    all: unset;
+    height: 100px;
+    width: 100px;
+
+}
+
+
+
+
+
+.partner-logo{
     width: 100px;
     height: 100px;
     transition: transform 0.3s ease-in-out;
@@ -476,6 +490,14 @@ header .grid-layout nav .nav-list li a:hover {
 
 .partner-logo:hover {
     transform: scale(1.1);
+}
+@keyframes anima {
+    0% 
+    { transform: translatex(0);
+    }
+    100% {
+        transform: translatex(-50%);
+    }
 }
 /* ---------------------------------------------------- */
 /* contatos */

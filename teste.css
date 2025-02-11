@@ -1,0 +1,41 @@
+
+.partners-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f7f7f7;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    /* width: 100vw; */
+
+}
+
+.partners-section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.partners-container {
+    display: inline-block;
+    animation: anima 15s linear infinite;
+}
+
+.partner-logo {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.partner-logo:hover {
+    transform: scale(1.1);
+}
+@keyframes anima {
+    0% 
+    { transform: translatex(0);
+    }
+    100% {
+        transform: translatex(-50%);
+    }
+}
