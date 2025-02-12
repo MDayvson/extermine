@@ -326,6 +326,7 @@ header .grid-layout nav .nav-list li a:hover {
     font-size: 28px;
     font-weight: 400;
     text-align: center;
+    text-decoration: none;
 }
 
 #s-home .grid-layout #home #home-container-text a:hover {
