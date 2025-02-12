@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="author" content="Iuri Silva" />
+  <meta name="author" content="Merari Dayvson" />
   <meta name="description" content="Extermine saúde Ambiental" />
   <meta name="keywords" content="controle de pragas e detetização" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,6 +21,7 @@
   <link rel="icon" href="assets/image/logo.png" />
   <link rel="apple-touch-icon" href="assets/image/logo.png" />
   <link rel="canonical" href="site extermine" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="assets/js/svg-inject.min.js"></script>
   <title>Extermine Saúde Ambiental</title>
 </head>
@@ -331,7 +332,55 @@
            <img src="assets/css/imagens/restaurante tio pepe.svg" alt="Restaurante Tio Pepe" class="partner-logo">
       </div>
   </div>
-<!-- --------------------------------------------------- --><div class="contact-section">
+<!-- --------------------------------------------------- -->
+<!-- formulario de contato -->
+<div class="container">
+  <h2 class="text-center">Entre em Contato</h2>
+  <form action="https://formspree.io/administrativo@exterminesa.com.br" method="POST" class="mt-4">
+      <p class="text-muted">* Campo obrigatório</p>
+      
+      <div class="row mb-4">
+          <div class="col-md-6">
+              <label for="nome" class="form-label">Nome completo *</label>
+              <input type="text" class="form-control" id="nome" name="nome" required>
+          </div>
+          <div class="col-md-6">
+              <label for="email" class="form-label">E-mail *</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+      </div>
+      
+      <div class="row mb-4">
+          <div class="col-md-6">
+              <label for="telefone" class="form-label">DDD + Telefone *</label>
+              <input type="tel" class="form-control" id="telefone" name="telefone" required>
+          </div>
+          <div class="col-md-6">
+              <label for="cidade" class="form-label">Cidade *</label>
+              <select class="form-select" id="estado" name="cidade" required>
+                  <option value="" selected>Por favor, selecione</option>
+                  <option value="SP">Recife</option>
+                  <option value="RJ">Jaboatão dos Guararapes</option>
+                  <option value="MG">Olinda</option>
+          
+                  <option value="OUTRO">Outro</option>
+              </select>
+          </div>
+      </div>
+      
+      <div class="mb-4">
+          <label for="mensagem" class="form-label">Mensagem/Motivo do contato *</label>
+          <textarea class="form-control" id="mensagem" name="mensagem" required></textarea>
+      </div>
+      
+ 
+      
+      <button type="submit" class="btn btn-primary w-100">Enviar</button>
+  </form>
+</div>
+
+<!-- ========================================================== -->
+ <div class="contact-section">
     <div id="s-contatos" class="container">
       <h2>Entre em Contato</h2>
       
@@ -339,12 +388,12 @@
           📞 <strong>Telefone:</strong> <a href="tel:+5581981989855">(81) 9.8198-9855</a>
       </div>
       
-      <div class="contact-item">
+      <!-- <div class="contact-item">
           ✉️ <strong>E-mail:</strong> <a href="mailto:contato@seusite.com">email</a>
-      </div>
+      </div> -->
       
       <div class="contact-item">
-          📍 <strong>Endereço:</strong> Rua: número, - Jaboatão dos Guararapes, PE
+          📍 <strong>Endereço:</strong> Rua Sítio Floresta, nº 1162 - Piedade - Jaboatão dos Guararapes - PE
       </div>
 
       <a class="button" href="https://wa.me/5581981989855" target="_blank">
@@ -355,6 +404,7 @@
 <!-- -------------------------------------------------- -->
 
 
+<!-- ========================================================== -->
     <footer>
       <div class="grid-layout">
         <p>
@@ -380,6 +430,7 @@
 
   <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
   <script type="module" src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -123,7 +123,8 @@ header .grid-layout nav .nav-list li {
 header .grid-layout nav .nav-list li a {
     color: #000000;
     position: relative;
-    font-size: 1.8rem
+    font-size: 1.8rem;
+    text-decoration: none;
 }
 
 header .grid-layout nav .nav-list li a::after {
@@ -495,6 +496,41 @@ header .grid-layout nav .nav-list li a:hover {
         transform: translatex(-50%);
     }
 }
+/* ---------------------------------------------------------- */
+.container {
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-control, .form-select {
+    height: 40px;
+    font-size: 18px !important;
+    padding: 12px;
+}
+textarea.form-control {
+    height: 200px;
+    font-size: 18px !important; 
+}
+.btn-primary {
+    padding: 16px;
+    font-size: 20px !important;
+}
+label {
+    font-size: 25px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+p.text-muted {
+    font-size: 16px;
+}
+
 /* ---------------------------------------------------- */
 /* contatos */
 
