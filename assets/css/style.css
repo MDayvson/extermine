@@ -283,6 +283,7 @@ header .grid-layout nav .nav-list li a:hover {
     line-height: 140%;
     font-size: 5rem;
     font-weight: 900;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5)
 }
 
 @media screen and (max-width: 992px) {
@@ -294,6 +295,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-home .grid-layout #home #home-container-text h1 span {
     color: #ff0000;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5)
 }
 
 #s-home .grid-layout #home #home-container-text p {
@@ -303,6 +305,7 @@ header .grid-layout nav .nav-list li a:hover {
     margin: 40px 0px;
     font-weight: 800;
     line-height: 160%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5)
 }
 
 @media screen and (max-width: 992px){
@@ -348,14 +351,11 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 
-
-
-
 #s-services {
     /* padding: 96px 48px; */
     padding: 56px 48px;
-    background-color: #ffffff;
-    border-bottom: 1px solid black;
+    background-color: #e6e6e6;
+    /* border-bottom: 1px solid black; */
      
 }
 
@@ -408,13 +408,12 @@ header .grid-layout nav .nav-list li a:hover {
     transition: 2s all ease;
     border: 1px solid #000000;
     border-radius: 4px;
-    transition: 0.3s all ease; /* Duração da transição ajustada */
 }
 
 #s-services .grid-layout #services article:hover {
     border: 2px solid #ff0000;
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Sombra vermelha no hover */
-    
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Sombra vermelha no hover
+     */
 }
 
 @media screen and (max-width: 1200px) {
@@ -449,6 +448,42 @@ header .grid-layout nav .nav-list li a:hover {
     color: #000000;
     font-size: 1.8rem
 }
+/* -------------------------------------- */
+.orcamento{
+    display: flex;
+    text-align: center;
+    padding: 56px 48px;
+    background-color: #e6e6e659;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.orcamento a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #237403;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    padding: 20px 32px;
+    /* max-width: 300px; */
+    border-radius: 4px;
+    transition: all .4s ease;
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.orcamento a:hover {
+    background: #00a03b;
+    box-shadow: 0 0 10px rgba(54, 148, 0, 0.5);
+}
+
+
 /* ------------------------------------------------------------------ */
 /* Estilização da seção de parceiros */
 .partners-section {
@@ -498,6 +533,8 @@ header .grid-layout nav .nav-list li a:hover {
     }
 }
 /* ---------------------------------------------------------- */
+/* formulario */
+
 .container {
     max-width: 100%;
     width: 90%;
@@ -677,7 +714,7 @@ footer div {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
-    animation: blink 2s infinite;  /* Efeito de piscada */
+    animation: blink 1.5s infinite;  /* Efeito de piscada */
 }
 
 .whatsapp-button:hover {
