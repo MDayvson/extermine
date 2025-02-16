@@ -1,5 +1,6 @@
-export function menu() {
+function menu() {
   class MobileNavbar {
+
     constructor(mobileMenu, navList, navLinks, navLinks2) {
       this.mobileMenu = document.querySelector(mobileMenu);
       this.navList = document.querySelector(navList);
@@ -47,3 +48,8 @@ export function menu() {
   );
   mobileNavbar.init();
 }
+
+// Inicializa o menu ao carregar a página
+document.addEventListener('DOMContentLoaded', function() {
+  menu();
+});

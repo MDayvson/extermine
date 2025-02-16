@@ -102,7 +102,7 @@ header .grid-layout nav {
 /* altera o tamanho da logo da nav */
 header .grid-layout nav img {
     /* width: 150px; */
-    width: 100px;
+    width: 500px;
 }
 
 header .grid-layout nav .nav-list {
@@ -174,7 +174,7 @@ header .grid-layout nav .nav-list li a:hover {
 
     to {
         opacity: 1;
-        transform: translateX(0)
+    transform: translateX(0)
     }
 }
 
@@ -197,16 +197,16 @@ header .grid-layout nav .nav-list li a:hover {
 
     .nav-list {
         text-align: center;
-        position: absolute;
-        top: 100px;
-        right: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: 999;
-        background-color: #979797;
-        flex-direction: column;
-        padding-top: 96px;
-        visibility: hidden
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: #979797;
+    flex-direction: column;
+    padding-top: 96px;
+    visibility: hidden
     }
 
     header .grid-layout nav .nav-list li {
@@ -226,7 +226,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-home {
     padding: 0px 50px;
-    background-image: url("imagens/dedetizacao-de-condominio.webp");
+    background-image: url("dedetizacao.webp");
     position: relative;
     background-size: cover;
     width: 100%;
@@ -400,8 +400,9 @@ header .grid-layout nav .nav-list li a:hover {
 #s-services .grid-layout #services article {
     background-color: #ffffff;
     height: auto;
-    padding: 32px;
+    padding: 20px;
     margin: 8px;
+    padding-top: 30px;
     flex-basis: calc(33% - 20px);
     flex-grow: 1;
     border: 1px solid #000000;
@@ -424,7 +425,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 @media screen and (max-width: 768px) {
     #s-services .grid-layout #services article {
-        flex-basis: calc(100% - 20px)
+        flex-basis: calc(50% - 20px)
     }
 }
 
@@ -434,7 +435,13 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-services .grid-layout #services article div img {
     width: 150px;
+    transition: transform 0.3s ease-in-out;
 }
+
+#s-services .grid-layout #services article:hover img {
+    transform: scale(1.05);
+}
+
 
 #s-services .grid-layout #services article h3 {
     padding: 24px 0px;
@@ -505,13 +512,13 @@ header .grid-layout nav .nav-list li a:hover {
 
 .partners-container {
     display: inline-block;
-    animation: anima 15s linear infinite;
+    animation: anima 50s linear infinite;
 }
 
 .partners-container img {
     all: unset;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 
 }
 
@@ -534,6 +541,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 /* ---------------------------------------------------------- */
 /* formulario */
+
 
 .container {
     max-width: 100%;
@@ -571,6 +579,7 @@ p.text-muted {
 
 /* ---------------------------------------------------- */
 /* contatos */
+
 
 .contact-section {
     width: 100%;
@@ -624,7 +633,6 @@ h2 {
 /* --------------------------------------------- */
 
 
-
 footer {
     width: 100%;
     height: auto;
@@ -651,7 +659,8 @@ footer p a {
 
 footer img {
     /* width: 32px; */
-    width: 40px
+    width: 40px;
+
 }
 
 footer div {
@@ -731,4 +740,68 @@ footer div {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+/* Estilos para a seção s-sectores */
+#s-sectores {
+    padding: 56px 48px;
+    background-color: #e6e6e6;
+}
+
+#s-sectores .grid-layout h2 {
+    text-align: center;
+    padding-bottom: 24px;
+    color: #000000;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+#s-sectores .grid-layout h2 span {
+    color: #ff0000;
+}
+
+#s-sectores .grid-layout #sectores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+#s-sectores .grid-layout #sectores article {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    width: 300px;
+    text-align: center;
+}
+
+#s-sectores .grid-layout #sectores article:hover {
+    transform: scale(1.05);
+}
+
+#s-sectores .grid-layout #sectores article img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#s-sectores .grid-layout #sectores article img:hover {
+    transform: scale(1.1);
+}
+
+#s-sectores .grid-layout #sectores article h3 {
+    color: #000000;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+#s-sectores .grid-layout #sectores article p {
+    color: #000000;
+    font-size: 1.8rem;
+    line-height: 1.6;
 }
