@@ -1,4 +1,5 @@
-function menu() {
+export default function menu() {
+
   class MobileNavbar {
 
     constructor(mobileMenu, navList, navLinks, navLinks2) {
@@ -48,8 +49,3 @@ function menu() {
   );
   mobileNavbar.init();
 }
-
-// Inicializa o menu ao carregar a página
-document.addEventListener('DOMContentLoaded', function() {
-  menu();
-});

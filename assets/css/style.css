@@ -400,7 +400,7 @@ header .grid-layout nav .nav-list li a:hover {
 #s-services .grid-layout #services article {
     background-color: #ffffff;
     height: auto;
-    padding: 20px;
+    padding: 0px;
     margin: 8px;
     padding-top: 30px;
     flex-basis: calc(33% - 20px);
